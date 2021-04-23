@@ -1,4 +1,6 @@
-body{
+body{display:flex;
+    justify-content: center;
+    align-items: center;
     width: 100vw;
     height: 100vh;
     background-image: linear-gradient(
@@ -7,4 +9,10 @@ body{
         white 30%,
         white 100%
     );
+}
+
+main#app{
+    width:50%;
+    height:50%;
+    background-color: beige;
 }
