@@ -12,13 +12,13 @@ body{display:flex;
 }
 
 main#app{
-    width:60%;
-    height:60%;
+    width:72.5%;
+    height:85%;
     background-color: beige;
 }
 
 .barra-top{
-    background-color:aqua;
+    background-color:#ececec;
     width:100%;
     height: 30px;
 }
@@ -29,14 +29,38 @@ main#app{
     background-color:aquamarine;
 }
 
-.contenitore .col-left{
-    
+.contenitore .col-left{    
     height:100%;
     width: 20%;
 }
 
 .messaggi{
+    display:flex;
     background-image: url('../img/mine.jpg');
     height: 100%;
     width: 100%;
+}
+
+.messaggi ul{    
+    display: flex;    
+    flex-direction: column;
+}
+
+.messaggi ul li {
+    display:flex;    
+    overflow: auto;
+    min-height: 10px;
+    word-wrap:break-word;
+    background-color: green;
+    border-radius: 5px;
+}
+
+.mitt  {    
+    max-width: 50%;
+}
+
+ .dest  {    
+    justify-self:flex-end;
+    max-width: 50%;
+    background-color:#d2ffb5;
 }
