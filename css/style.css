@@ -12,7 +12,31 @@ body{display:flex;
 }
 
 main#app{
-    width:50%;
-    height:50%;
+    width:60%;
+    height:60%;
     background-color: beige;
+}
+
+.barra-top{
+    background-color:aqua;
+    width:100%;
+    height: 30px;
+}
+
+.contenitore{
+    display:flex;
+    height:100%;
+    background-color:aquamarine;
+}
+
+.contenitore .col-left{
+    
+    height:100%;
+    width: 20%;
+}
+
+.messaggi{
+    background-image: url('../img/mine.jpg');
+    height: 100%;
+    width: 100%;
 }
