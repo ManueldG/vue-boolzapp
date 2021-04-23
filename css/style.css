@@ -1,6 +1,8 @@
-body{display:flex;
+body{
+    display:flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Lato', sans-serif;
     width: 100vw;
     height: 100vh;
     background-image: linear-gradient(
@@ -37,7 +39,7 @@ main#app{
 .messaggi{
     display:flex;
     background-image: url('../img/mine.jpg');
-    padding: 0 60px;
+    padding: 50px 60px;
     height: 100%;
     width: 100%;
 }
