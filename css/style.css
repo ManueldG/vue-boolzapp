@@ -1,6 +1,10 @@
-*{
+body{
+    width: 100vw;
+    height: 100vh;
     background-image: linear-gradient(
-        green 0%,
-        blue 50%,
+        #1ebea5 0%,
+        #1ebea5 30%,
+        white 30%,
+        white 100%
     );
 }
