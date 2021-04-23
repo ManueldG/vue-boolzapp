@@ -37,6 +37,7 @@ main#app{
 .messaggi{
     display:flex;
     background-image: url('../img/mine.jpg');
+    padding: 0 60px;
     height: 100%;
     width: 100%;
 }
@@ -51,16 +52,17 @@ main#app{
     overflow: auto;
     min-height: 10px;
     word-wrap:break-word;
-    background-color: green;
     border-radius: 5px;
+    padding: 10px
 }
 
 .mitt  {    
     max-width: 50%;
+    background-color:#ffffff;
 }
 
  .dest  {    
-    justify-self:flex-end;
+    align-self:flex-end;
     max-width: 50%;
     background-color:#d2ffb5;
 }
