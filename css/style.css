@@ -20,9 +20,33 @@ main#app{
 }
 
 .barra-top{
+    display: flex;
     background-color:#ececec;
     width:100%;
+    height: 50px;
+}
+
+.left,
+.right{
+    display: flex;
+    align-items: center;
+}
+
+.utente{
+    display: flex;
+    align-items: center;
+}
+
+.barra-top .left{
+    justify-content: space-between;
+    width: 65%;
     height: 30px;
+}
+
+.barra-top .left img,
+.barra-top .right img{
+    height: 30px;
+    object-fit:cover;
 }
 
 .contenitore{
@@ -33,7 +57,36 @@ main#app{
 
 .contenitore .col-left{    
     height:100%;
-    width: 20%;
+    width: 65%;
+}
+
+.contatti{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 5px 10px;
+}
+
+.contatti li{
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.contatti .avatar{
+    display: inline-block;
+}
+
+.contatti .avatar img{
+    display: inline-block;
+    width:50px;
+    border-radius:50px;
+    background-color: beige;
+}
+
+.contatti .nome{
+    margin: 0 10px;
 }
 
 .messaggi{
