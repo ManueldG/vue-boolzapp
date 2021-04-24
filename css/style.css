@@ -17,6 +17,8 @@ main#app{
     width:72.5%;
     height:85%;
     background-color: beige;
+    overflow: hidden;
+    border-radius: 5px;
 }
 
 .barra-top{
@@ -100,7 +102,7 @@ main#app{
     background-color: #fff;
     border:none;
     border-radius: 5px 0 0 5px ;
-    margin: 0 2px;
+    margin: 0 0 0 5px;
 }
 
 .contenitore .col-left .search button:active{
@@ -110,12 +112,9 @@ main#app{
 .contenitore .col-left .search input{
     outline: none;
     border: none;
-    margin: 7px;
+    margin: 7px 7px 7px 0;
     width: calc(100% - 47px);
 }
-
-
-
 
 .contatti{
     display: flex;
