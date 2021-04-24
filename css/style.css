@@ -82,11 +82,39 @@ main#app{
     background-color: #f4faff;
     border-radius: 50%;
     padding: 10px;
+    vertical-align: middle;
 }
 
 .contenitore .col-left .link .text{
     display: inline-block;
+    vertical-align: middle;
+    padding: 10px;
 }
+
+.contenitore .col-left .search{
+    background-color: #fafafa;
+}
+
+.contenitore .col-left .search button{
+    color:#bec0c2;
+    background-color: #fff;
+    border:none;
+    border-radius: 5px 0 0 5px ;
+    margin: 0 2px;
+}
+
+.contenitore .col-left .search button:active{
+    filter: invert(100%);
+}
+
+.contenitore .col-left .search input{
+    outline: none;
+    border: none;
+    margin: 7px;
+    width: calc(100% - 47px);
+}
+
+
 
 
 .contatti{
