@@ -14,8 +14,8 @@ body{
 }
 
 main#app{
-    width:72.5%;
-    height:85%;
+    width:72.5vw;
+    height:85vh;
     background-color: beige;
     overflow: hidden;
     border-radius: 5px;
@@ -65,7 +65,7 @@ main#app{
 .contenitore{
     display:flex;
     justify-content: space-between;
-    height:100%;
+    height: calc(100% - 50px);
     background-color:#fff;
 }
 
@@ -146,12 +146,16 @@ main#app{
     margin: 0 10px;
 }
 
-.messaggi{
-    display:flex;
+.box{    
     background-image: url('../img/mine.jpg');
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-basis: 100%;    
+}
+
+.messaggi{
     padding: 50px 60px;
-    height: 100%;
-    width: 100%;
 }
 
 .messaggi ul{    
@@ -178,3 +182,29 @@ main#app{
     max-width: 50%;
     background-color:#d2ffb5;
 }
+
+.barra-bottom{
+    display: flex;
+    justify-content:center;
+    background-color:#f3f0eb;
+    width:100%;
+}
+
+.barra-bottom input{
+    width: calc(100% - ( 35px * 2 ));
+}
+
+.barra-bottom button{
+    background-color:#f3f0eb;
+    border:transparent;
+}
+
+
+
+
+  
+  
+  
+  
+  
+
