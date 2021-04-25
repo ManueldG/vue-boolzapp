@@ -14,8 +14,8 @@ body{
 }
 
 main#app{
-    width:72.5vw;
-    height:85vh;
+    width:72.5%;
+    height:85%;
     background-color: beige;
     overflow: hidden;
     border-radius: 5px;
@@ -34,17 +34,17 @@ main#app{
     justify-content: space-between;
     align-items: center;
     padding: 0 15px;
-}
-
+}  
+  
 .barra-top .left{
-    flex-basis: 33%;
+    flex-basis: 38%;
     border-right: 1px solid #b8b8b8;
     justify-content: space-between;
     height: 100%;
 }
 
 .right{
-    flex-basis: 65%;
+    flex-basis: 60%;
 }
 
 .utente{
@@ -185,18 +185,23 @@ main#app{
 
 .barra-bottom{
     display: flex;
-    justify-content:center;
+    justify-content: space-around;
     background-color:#f3f0eb;
-    width:100%;
+    height: 30px;
+    padding: 5px
 }
 
-.barra-bottom input{
+.barra-bottom input{    
     width: calc(100% - ( 35px * 2 ));
+    outline: none;
+    border: transparent;    
 }
 
 .barra-bottom button{
+    color:#767d81;
     background-color:#f3f0eb;
-    border:transparent;
+    border: transparent;
+    margin: 3px auto;
 }
 
 
