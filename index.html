@@ -72,12 +72,14 @@
                 <div class="contatti">
                     <ul>
                         <li v-for="elemento in yourPropNameHere">
-                            <div class="avatar">
-                                <img  :src="'img/avatar'+elemento.avatar+'.jpg'" alt="avatar_1">
-                            </div>
-                            <div class="nome">
-                                {{elemento.name}}
-                            </div>
+                            <a href="#" v-on:click="vs">
+                                <div class="avatar">
+                                    <img  :src="'img/avatar'+elemento.avatar+'.jpg'" alt="avatar_1">
+                                </div>
+                                <div class="nome">
+                                    {{elemento.name}}
+                                </div>
+                            </a>
                         </li>
                     </ul>
                 </div>
