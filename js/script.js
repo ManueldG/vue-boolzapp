@@ -92,13 +92,9 @@
             ]
         },
         method:{
-            prova : function(yourPropNameHere)
-            {
-                console.log(yourPropNameHere);
-            },
             vs : function(event){
-                console.log(this.name);
-            }     
+                console.log(event);
+            },   
 
         }  
     })

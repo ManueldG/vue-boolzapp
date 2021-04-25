@@ -124,7 +124,7 @@ main#app{
     padding: 5px 10px;
 }
 
-.contatti li{
+.contatti li a{
     display:flex;
     justify-content: flex-start;
     align-items: center;
