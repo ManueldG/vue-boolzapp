@@ -16,13 +16,12 @@
 <!-- VUE js -->
 <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
 
-<script src="js/script.js"></script>
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>VUE BOOLAPP</title>
 </head>
-<body onload="main()">
+<body>
 
     <main id="app">
         <div class="barra-top">
@@ -39,7 +38,7 @@
             </div>
             <div class="right">
                 <div class="utente">
-                    <img src="img/avatar_8.jpg" alt="avatar8">
+                    <img :src="'img/avatar'+yourPropNameHere[0].avatar+'.jpg'" alt="avatar8">
                     <div class="testo">
                         <div class="nome">
                             Michele
@@ -72,12 +71,12 @@
                 </div>
                 <div class="contatti">
                     <ul>
-                        <li>
+                        <li v-for="elemento in yourPropNameHere">
                             <div class="avatar">
-                                <img src="img/avatar_1.jpg" alt="avatar_1">
+                                <img  :src="'img/avatar'+elemento.avatar+'.jpg'" alt="avatar_1">
                             </div>
                             <div class="nome">
-                                avatar1
+                                {{elemento.name}}
                             </div>
                         </li>
                     </ul>
@@ -93,11 +92,11 @@
                     </li>
                 </ul>               
             <div class="barra-bottom"></div>
-        </div>
-
-        
+        </div>   
         
     </main>
+    <script src="js/contatti.js"></script>
+    <script src="js/script.js"></script>
 
 </body>
 </html>

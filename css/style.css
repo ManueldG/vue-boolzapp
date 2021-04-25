@@ -8,8 +8,8 @@ body{
     background-image: linear-gradient(
         #1ebea5 0%,
         #1ebea5 30%,
-        white 30%,
-        white 100%
+        #d9dfdc 30%,
+        #d9dfdc 100%
     );
 }
 
@@ -66,7 +66,7 @@ main#app{
     display:flex;
     justify-content: space-between;
     height:100%;
-    background-color:aquamarine;
+    background-color:#fff;
 }
 
 .contenitore .col-left{    
@@ -128,6 +128,7 @@ main#app{
     display:flex;
     justify-content: flex-start;
     align-items: center;
+    border-bottom: 1px solid #f6f6f6;
 }
 
 .contatti .avatar{
