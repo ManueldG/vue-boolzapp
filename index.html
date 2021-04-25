@@ -44,7 +44,7 @@
                             {{utenteCorrente.name}}
                         </div>
                         <div class="accesso">
-                            {{utenteCorrente!='' ? utenteCorrente.messages[0].date:''}}
+                            {{utenteCorrente.messages[0].date}}
                         </div>
                     </div>
                 </div>
@@ -87,12 +87,10 @@
             <div class="box">
                 <div class="messaggi">                
                     <ul>
-                        <li class="mitt">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam ab placeat, quod ea quasi neque temporibus voluptas nulla ipsam magni corrupti impedit harum porro molestias eaque. Debitis nostrum dignissimos perspiciatis?
+                        <li v-for="message in utenteCorrente.messages" :class="message.status=='sent'? 'dest':'mitt'">
+                            {{message.message}}{{message.date}}
                         </li>
-                        <li class="dest">
-                            x
-                        </li>
+                        
                     </ul>               
                 </div>
                 <div class="barra-bottom">
