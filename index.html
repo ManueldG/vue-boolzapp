@@ -38,13 +38,13 @@
             </div>
             <div class="right">
                 <div class="utente">
-                    <img :src="'img/avatar'+yourPropNameHere[0].avatar+'.jpg'" alt="avatar8">
+                    <img :src="'img/avatar'+utenteCorrente.avatar+'.jpg'" alt="avatar8">
                     <div class="testo">
                         <div class="nome">
-                            Michele
+                            {{utenteCorrente.name}}
                         </div>
                         <div class="accesso">
-                            oggi
+                            {{utenteCorrente!='' ? utenteCorrente.messages[0].date:''}}
                         </div>
                     </div>
                 </div>
@@ -72,7 +72,7 @@
                 <div class="contatti">
                     <ul>
                         <li v-for="elemento in yourPropNameHere">
-                            <a href="#" v-on:click="vs('prova',$event)">
+                            <a href="#" v-on:click="vs(elemento)">
                                 <div class="avatar">
                                     <img  :src="'img/avatar'+elemento.avatar+'.jpg'" alt="avatar_1">
                                 </div>

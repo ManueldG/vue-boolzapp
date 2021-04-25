@@ -4,6 +4,28 @@
     var app = new Vue({
         el:'#app',
         data: {
+            utenteCorrente: {
+                name: 'Michele',
+                avatar: '_1',
+                visible: true,
+                messages: [
+                    {
+                        date: '10/01/2020 15:30:55',
+                        message: 'Hai portato a spasso il cane?',
+                        status: 'sent'
+                    },
+                    {
+                        date: '10/01/2020 15:50:00',
+                        message: 'Ricordati di dargli da mangiare',
+                        status: 'sent'
+                    },
+                    {
+                        date: '10/01/2020 16:15:22',
+                        message: 'Tutto fatto!',
+                        status: 'received'
+                    }
+                ],
+            },
             // Elenco contatti
             yourPropNameHere: [
                 {
@@ -92,10 +114,9 @@
             ]
         },
         methods:{
-            vs : function(message,event){
-                console.log(event);
-                console.log(message);
-            },   
-
+            vs : function(usr){
+                console.log(usr);
+                this.utenteCorrente=usr;
+            },
         }  
     })
