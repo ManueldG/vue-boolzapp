@@ -72,7 +72,7 @@
                 <div class="contatti">
                     <ul>
                         <li v-for="elemento in yourPropNameHere">
-                            <a href="#" v-on:click="vs">
+                            <a href="#" v-on:click="vs('prova',$event)">
                                 <div class="avatar">
                                     <img  :src="'img/avatar'+elemento.avatar+'.jpg'" alt="avatar_1">
                                 </div>

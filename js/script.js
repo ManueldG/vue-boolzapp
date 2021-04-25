@@ -91,9 +91,10 @@
                 },
             ]
         },
-        method:{
-            vs : function(event){
+        methods:{
+            vs : function(message,event){
                 console.log(event);
+                console.log(message);
             },   
 
         }  
