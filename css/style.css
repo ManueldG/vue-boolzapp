@@ -19,6 +19,7 @@ main#app{
     background-color: beige;
     overflow: hidden;
     border-radius: 5px;
+    min-width:900px;
 }
 
 .barra-top{
