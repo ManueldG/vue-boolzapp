@@ -4,6 +4,7 @@
     var app = new Vue({
         el:'#app',
         data: {
+            message : 'test',
             utenteCorrente: {
                 name: 'Michele',
                 avatar: '_1',
@@ -118,5 +119,15 @@
                 console.log(usr);
                 this.utenteCorrente=usr;
             },
-        }  
+            echo : function(e){
+            
+            for (elem of this.yourPropNameHere){                
+                elem.visible=elem.name.includes(this.message);                
+            }
+                
+
+            
+            }
+        },
+        
     })

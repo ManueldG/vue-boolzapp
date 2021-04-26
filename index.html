@@ -67,11 +67,11 @@
                 </div>
                 <div class="search">
                     <button><i class="fas fa-search"></i></button>
-                    <input type="text" name="" id="">
+                    <input type="text" name="" id="" v-on:keyup="echo" v-model="message">
                 </div>
                 <div class="contatti">
                     <ul>
-                        <li v-for="elemento in yourPropNameHere">
+                        <li v-for="elemento in yourPropNameHere" v-if="elemento.visible" >
                             <a href="#" v-on:click="vs(elemento)">
                                 <div class="avatar">
                                     <img  :src="'img/avatar'+elemento.avatar+'.jpg'" alt="avatar_1">
