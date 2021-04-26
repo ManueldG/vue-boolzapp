@@ -88,7 +88,8 @@
                 <div class="messaggi">                
                     <ul>
                         <li v-for="message in utenteCorrente.messages" :class="message.status=='sent'? 'dest':'mitt'">
-                            {{message.message}}{{message.date}}
+                            {{message.message}}
+                            {{message.date}}
                         </li>
                         
                     </ul>               

@@ -62,6 +62,10 @@ main#app{
     color:lightgray;
 }
 
+.barra-top .menu i{
+    margin: 5px;
+}
+
 .contenitore{
     display:flex;
     justify-content: space-between;
@@ -146,7 +150,8 @@ main#app{
     margin: 0 10px;
 }
 
-.box{    
+.box{  
+    height: 100%;  
     background-image: url('../img/mine.jpg');
     display: flex;
     flex-direction: column;
@@ -155,7 +160,9 @@ main#app{
 }
 
 .messaggi{
-    padding: 50px 60px;
+    padding-left: 60px;
+    height: calc(100% - 30px);
+    padding-right: 60px;
 }
 
 .messaggi ul{    
@@ -169,7 +176,8 @@ main#app{
     min-height: 10px;
     word-wrap:break-word;
     border-radius: 5px;
-    padding: 10px
+    padding: 10px;
+    margin:5px;
 }
 
 .mitt  {    
@@ -203,6 +211,13 @@ main#app{
     border: transparent;
     margin: 3px auto;
 }
+
+
+/* style.css | file:///K:/corsi/vue-boolzapp/css/style.css */
+
+
+  
+  
 
 
 
