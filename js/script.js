@@ -120,9 +120,9 @@
                 this.utenteCorrente=usr;
             },
             echo : function(e){
-            
+                console.log(app.$data.message); 
             for (elem of this.yourPropNameHere){                
-                elem.visible=elem.name.includes(this.message);                
+                elem.visible=elem.name.toLowerCase().includes(this.message.toLowerCase());                
             }
                 
 
