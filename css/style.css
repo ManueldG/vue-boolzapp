@@ -58,8 +58,10 @@ main#app{
     object-fit:cover;
 }
 
-.barra-top .menu{
-    color:lightgray;
+.barra-top .menu{    
+    display: flex;
+    flex-wrap: nowrap;
+    color: lightgray;    
 }
 
 .barra-top .menu i{
