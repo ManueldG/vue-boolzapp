@@ -9,7 +9,11 @@
                 message: '',
                 status: 'sent',
             },
-            
+            corr: '',//ricerca utente corrente
+            io: {
+                name:'Manuel della Gala',
+                avatar: 'io',
+            },            
             utenteCorrente: { // utente selezionato
                 name: 'Michele',
                 avatar: '_1',

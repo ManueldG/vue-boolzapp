@@ -27,8 +27,8 @@
         <div class="barra-top">
             <div class="left">
                 <div class="utente">
-                    <img src="img/avatar_io.jpg" alt="io">
-                    <div class="nome">Nome Utente</div>
+                    <img :src="'img/avatar_'+io.avatar+'.jpg'" alt="io">
+                    <div class="nome">{{io.name}}</div>
                 </div>
                 <div class="menu">
                     <i class="fas fa-circle-notch"></i>

@@ -113,15 +113,24 @@ main#app{
 }
 
 .contenitore .col-left .search button:active{
-    filter: invert(100%);
+    /*filter: invert(50%);*/
+    box-shadow: -1px -1px 1px rgb(59, 36, 114) inset;
 }
 
 .contenitore .col-left .search input{
     outline: none;
     border: none;
+    border-radius: 5px;
     margin: 7px 7px 7px 0;
     width: calc(100% - 47px);
 }
+
+.contenitore .col-left .search input:focus{
+    border: 1px solid blue;
+}
+
+
+
 
 .contatti{
     display: flex;
@@ -217,9 +226,19 @@ main#app{
     border: transparent;    
 }
 
+.barra-bottom input:focus {
+    border: 1px solid blue;
+    border-radius: 5px;
+}
+
 .barra-bottom button{
     color:#767d81;
     background-color:#f3f0eb;
     border: transparent;
+    border-radius: 5px;
     margin: 3px auto;
+}
+
+.barra-bottom button:active{
+    box-shadow: -1px -1px 1px inset black;
 }
