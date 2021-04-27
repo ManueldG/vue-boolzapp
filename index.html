@@ -44,7 +44,7 @@
                             {{utenteCorrente.name}}
                         </div>
                         <div class="accesso">
-                            {{utenteCorrente.messages[0].date}}
+                            {{utenteCorrente.messages[utenteCorrente.messages.length-1].date}}
                         </div>
                     </div>
                 </div>
@@ -89,7 +89,7 @@
                     <ul>
                         <li v-for="message in utenteCorrente.messages" :class="message.status=='sent'? 'dest':'mitt'">
                             {{message.message}}
-                            {{message.date}}
+                            <div class="data">{{message.date}}</div>
                         </li>
                         
                     </ul>               

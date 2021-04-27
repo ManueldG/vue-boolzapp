@@ -5,7 +5,7 @@
         el:'#app',
         data: {
             newMess:{
-                date: '',
+                date: new Date,
                 message: '',
                 status: 'sent',
             },
@@ -131,11 +131,12 @@
                     }            
                 },
             addMessage : function(msgs,msg,status){
+                let data = this.newMess.date;
                 console.log('name',msgs);
                 console.log('nuovo valore',this.newMess);
                 msgs.messages.push({
                     message : msg,
-                    data : this.newMess.data,
+                    date : (data.getDate()+"/"+(data.getMonth()+1)+"/"+(data.getFullYear())+"  "+data.getHours()+":"+data.getMinutes()+":"+data.getSeconds()),
                     status : status,
                 });
                 console.log(msgs);                      

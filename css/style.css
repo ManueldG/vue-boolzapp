@@ -170,17 +170,20 @@ main#app{
     flex-direction: column;
 }
 
-.messaggi ul li {
-    display:flex;    
+.messaggi ul li {    
+    display: flex;
+    flex-direction: column;
     overflow: auto;
+    min-width: 90px;
     min-height: 10px;
-    word-wrap:break-word;
+    word-wrap: break-word;
     border-radius: 5px;
     padding: 10px;
-    margin:5px;
+    margin: 5px;    
 }
 
-.mitt  {    
+.mitt  {
+    align-self:flex-start;    
     max-width: 50%;
     background-color:#ffffff;
 }
@@ -189,6 +192,12 @@ main#app{
     align-self:flex-end;
     max-width: 50%;
     background-color:#d2ffb5;
+}
+
+.messaggi ul li .data{
+    align-self: flex-end;
+    font-size: 10px;
+    color: lightgray;
 }
 
 .barra-bottom{
@@ -211,20 +220,3 @@ main#app{
     border: transparent;
     margin: 3px auto;
 }
-
-
-/* style.css | file:///K:/corsi/vue-boolzapp/css/style.css */
-
-
-  
-  
-
-
-
-
-  
-  
-  
-  
-  
-
