@@ -130,24 +130,26 @@
                     elem.visible=elem.name.toLowerCase().includes(this.corr.toLowerCase().trim());                
                     }            
                 },
-            addMessage : function(msgs){
-                console.log('name',msgs.name);
-                let x= this.yourPropNameHere.filter(function(utente){
-                    return utente.name==msgs.name;
-                })
-                console.log('utente',x[0]);
-                //this.delay();               
+            addMessage : function(msgs,msg,status){
+                console.log('name',msgs);
+                console.log('nuovo valore',this.newMess);
+                msgs.messages.push({
+                    message : msg,
+                    data : this.newMess.data,
+                    status : status,
+                });
+                console.log(msgs);                      
             },
-            delay() {
+            delay(msgs) {
                 var v = this;
                 setTimeout(function () {
                   console.log('time',v.newMess.message);
-                  //v.addMessage('x');
+                  v.addMessage(msgs,'ok','received');
                 }, 1000);
             },
             conversation : function(msgs){
-                this.addMessage(msgs);
-                this.delay();
+                this.addMessage(msgs,this.newMess.message,this.newMess.status);
+                this.delay(msgs);
             }
             
         
