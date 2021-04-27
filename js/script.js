@@ -151,9 +151,8 @@
             conversation : function(msgs){
                 this.addMessage(msgs,this.newMess.message,this.newMess.status);
                 this.delay(msgs);
+                this.newMess.message = '';
             }
-            
-        
             
         }
     
