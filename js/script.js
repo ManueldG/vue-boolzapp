@@ -4,13 +4,13 @@
     var app = new Vue({
         el:'#app',
         data: {
-            newMess:{
+            newMess:{ //nuovo messaggio
                 date: new Date,
                 message: '',
                 status: 'sent',
             },
-            corr : '',
-            utenteCorrente: {
+            
+            utenteCorrente: { // utente selezionato
                 name: 'Michele',
                 avatar: '_1',
                 visible: true,
@@ -32,6 +32,7 @@
                     }
                 ],
             },
+
             // Elenco contatti
             yourPropNameHere: [
                 {
