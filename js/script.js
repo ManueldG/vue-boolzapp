@@ -131,14 +131,26 @@
                     }            
                 },
             addMessage : function(msgs){
-                console.log(msgs.name);
+                console.log('name',msgs.name);
                 let x= this.yourPropNameHere.filter(function(utente){
                     return utente.name==msgs.name;
                 })
-                console.log(x);
-                         
-                
+                console.log('utente',x[0]);
+                //this.delay();               
             },
+            delay() {
+                var v = this;
+                setTimeout(function () {
+                  console.log('time',v.newMess.message);
+                  //v.addMessage('x');
+                }, 1000);
+            },
+            conversation : function(msgs){
+                this.addMessage(msgs);
+                this.delay();
+            }
+            
+        
             
         }
     
