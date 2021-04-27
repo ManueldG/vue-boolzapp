@@ -67,7 +67,7 @@
                 </div>
                 <div class="search">
                     <button><i class="fas fa-search"></i></button>
-                    <input type="text" name="" id="" v-on:keyup="echo" v-model="message">
+                    <input type="text" name="" id="" v-on:keyup="echo" v-model="corr">
                 </div>
                 <div class="contatti">
                     <ul>
@@ -98,7 +98,7 @@
                         <button>
                             <i class="far fa-smile"></i>
                         </button>
-                        <input type="text" placeholder="Scrivi un messaggio">
+                        <input type="text" placeholder="Scrivi un messaggio" v-model="newMess.message" @keyup.enter="addMessage(utenteCorrente)">
                         <button>
                             <i class="fas fa-microphone"></i>
                         </button>

@@ -4,7 +4,12 @@
     var app = new Vue({
         el:'#app',
         data: {
-            message : 'test',
+            newMess:{
+                date: '',
+                message: '',
+                status: 'sent',
+            },
+            corr : '',
             utenteCorrente: {
                 name: 'Michele',
                 avatar: '_1',
@@ -119,15 +124,22 @@
                 console.log(usr);
                 this.utenteCorrente=usr;
             },
-            echo : function(e){
-                console.log(app.$data.message); 
-            for (elem of this.yourPropNameHere){                
-                elem.visible=elem.name.toLowerCase().includes(this.message.toLowerCase());                
-            }
+            echo : function(e){ 
                 
-
+                for (elem of this.yourPropNameHere){                
+                    elem.visible=elem.name.toLowerCase().includes(this.corr.toLowerCase().trim());                
+                    }            
+                },
+            addMessage : function(msgs){
+                console.log(msgs.name);
+                let x= this.yourPropNameHere.filter(function(utente){
+                    return utente.name==msgs.name;
+                })
+                console.log(x);
+                         
+                
+            },
             
-            }
-        },
-        
-    })
+        }
+    
+})
