@@ -10,7 +10,7 @@
                 status: 'sent',
             },
             corr: '',//ricerca utente corrente
-            io: {
+            io: { // dati utente registrato
                 name:'Manuel della Gala',
                 avatar: 'io',
             },            
@@ -125,35 +125,34 @@
             ]
         },
         methods:{
-            vs : function(usr){
+            vs : function(usr){ // utente selezionato
                 console.log(usr);
                 this.utenteCorrente=usr;
             },
-            echo : function(e){ 
-                
+            echo : function(e){ //  scorre la lista contatti e confronta la stringa passata dall'input             
                 for (elem of this.yourPropNameHere){                
                     elem.visible=elem.name.toLowerCase().includes(this.corr.toLowerCase().trim());                
                     }            
                 },
-            addMessage : function(msgs,msg,status){
+            addMessage : function(msgs,msg,status){ // aggiunge il messaggio passo i messaggi dell'utente selezionato il messaggio da inserire e lo status
                 let data = this.newMess.date;
                 console.log('name',msgs);
                 console.log('nuovo valore',this.newMess);
                 msgs.messages.push({
                     message : msg,
-                    date : (data.getDate()+"/"+(data.getMonth()+1)+"/"+(data.getFullYear())+"  "+data.getHours()+":"+data.getMinutes()+":"+data.getSeconds()),
+                    date : (data.getDate()+"/"+(data.getMonth()+1)+"/"+(data.getFullYear())+"  "+data.getHours()+":"+data.getMinutes()+":"+data.getSeconds()), // aggiungo la data in formato IT
                     status : status,
                 });
                 console.log(msgs);                      
             },
-            delay(msgs) {
+            delay(msgs) { // dopo 1 secondo chiama la funzione addMessage
                 var v = this;
                 setTimeout(function () {
                   console.log('time',v.newMess.message);
                   v.addMessage(msgs,'ok','received');
                 }, 1000);
             },
-            conversation : function(msgs){
+            conversation : function(msgs){ // chiamo due funzioni addMess e delay poi resetto l'input
                 this.addMessage(msgs,this.newMess.message,this.newMess.status);
                 this.delay(msgs);
                 this.newMess.message = '';

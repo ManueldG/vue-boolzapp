@@ -113,7 +113,6 @@ main#app{
 }
 
 .contenitore .col-left .search button:active{
-    /*filter: invert(50%);*/
     box-shadow: -1px -1px 1px rgb(59, 36, 114) inset;
 }
 
