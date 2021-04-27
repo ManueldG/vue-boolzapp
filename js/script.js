@@ -1,4 +1,7 @@
-
+var now = dayjs();
+console.log(now);
+var y= now.format('DD/MM/YYYY HH:mm:ss');
+console.log(y);
 
 
     var app = new Vue({
