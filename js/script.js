@@ -166,8 +166,12 @@ console.log(y);
                 console.log(e.target.innerHTML);
                 this.newMess.message = this.newMess.message+e.target.innerHTML    
 
+            },
+            listEmoji: function(array,start,end){
+                console.log(array,this.emojis);
+                array.length= end-start+1;
+                return array;
             }
-            
         }
     
 })
