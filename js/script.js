@@ -159,6 +159,13 @@ console.log(y);
                 this.addMessage(msgs,this.newMess.message,this.newMess.status);
                 this.delay(msgs);
                 this.newMess.message = '';
+            },
+            insertEmoji: function(e){ // inserimento emoji
+                //.newMess.push({message : 'prova'});
+                               
+                console.log(e.target.innerHTML);
+                this.newMess.message = this.newMess.message+e.target.innerHTML    
+
             }
             
         }
