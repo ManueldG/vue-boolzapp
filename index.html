@@ -97,6 +97,10 @@
                 <div class="barra-bottom">
                         <button>
                             <i class="far fa-smile"></i>
+                                                     
+                            <div class="emojis" >
+                                <div class="emoji" v-for="emoji in emojis.split(' ')" >{{emoji}}</div>
+                            </div>
                         </button>
                         <input type="text" placeholder="Scrivi un messaggio" v-model="newMess.message" @keyup.enter="conversation(utenteCorrente)">
                         <button>
@@ -106,9 +110,9 @@
             </div>
     </main>
     <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
-    <script>dayjs().format()</script>
     <script src="js/contatti.js"></script>
     <script src="js/script.js"></script>
-
 </body>
 </html>
+
+

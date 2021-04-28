@@ -231,6 +231,7 @@ main#app{
 }
 
 .barra-bottom button{
+    position: relative;
     color:#767d81;
     background-color:#f3f0eb;
     border: transparent;
@@ -240,4 +241,30 @@ main#app{
 
 .barra-bottom button:active{
     box-shadow: -1px -1px 1px inset black;
+}
+
+.barra-bottom .emojis {
+    display:none; 
+    background-color: beige;
+    flex-wrap: wrap;   
+    position: absolute;
+    bottom: 40px;
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.barra-bottom button:active .emojis {
+    display:flex;   
+}
+
+.barra-bottom button:active .emoji:hover {
+    background-color: yellowgreen;
+    border-radius: 4px; 
+}
+
+
+
+.barra-bottom button.fa-smile:hover{
+    background-color: black;
 }
