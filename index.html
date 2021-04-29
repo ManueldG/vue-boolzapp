@@ -99,7 +99,7 @@
                             <i class="far fa-smile"></i>
                                                      
                             <div class="emojis" >
-                                <div class="emoji" v-for="emoji in listEmoji(emojis.split(' '),0,100)" @mouseup="insertEmoji">{{emoji}}</div>
+                                <div class="emoji" v-for="emoji in listEmoji(emojis,0,100)" @mouseup="insertEmoji">{{emoji}}</div>
                             </div>
                         </button>
                         <input type="text" placeholder="Scrivi un messaggio" v-model="newMess.message" @keyup.enter="conversation(utenteCorrente)">
