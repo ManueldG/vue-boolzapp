@@ -173,19 +173,27 @@ console.log(y);
                 array.length= end-start+1;
                 return array;
             },
-            listEmojiR: function(array,start,end){
-                
-                if ((end-start)<0){
-                    console.log('0',this.newEmoji,array);
-                    return this.newEmoji.push(array[0].trim());
-                }
-                    
-                else{                    
-                    this.newEmoji.push(this.listEmoji(array,start,end-1));
-                    console.log('1',this.newEmoji,array);
-                    return this.newEmoji.push(array[end-start].trim());
+            listEmojiR: function(array,start,end){ //listEmoji versione ricorsiva
+                if ((end-start)<=0){
+                    return [];
+                }                    
+                else{ 
+                    var ico = this.listEmojiR(array,start,end-1);                   
+                    ico.push(array[end-start]);
+                    console.log(ico);
+                    return ico;
                 }                
-                
+                /*
+                function count(n) {
+                if (n === 1) {
+                    return [1];
+                } else {
+                    var numbers = count(n - 1); 
+                    numbers.push(n);
+                    return numbers;
+                }
+                }
+                */ 
             }
         }
     
